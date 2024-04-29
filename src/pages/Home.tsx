@@ -28,7 +28,7 @@ function Home() {
           </div>
           <div className="gridHomeItem2">map</div>
           <div className="gridHomeItem3">photo carousel</div>
-          <div className="gridHomeItem4">4</div>
+          <div className="gridHomeItem4">dwasdfsadfsdf</div>
           <div className="gridHomeItem5">5</div>
           <div className="gridHomeItem6">6</div>
         </div>
