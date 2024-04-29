@@ -6,7 +6,11 @@ function Home() {
       <main>
         <div className="displayGrid">
           <div className="gridHomeItem1">
-            <img className="gridIt1Img" src="src\assets\coder.png" alt="photo1" />
+            <img
+              className="gridIt1Img"
+              src="src\assets\coder.png"
+              alt="photo1"
+            />
             <p className="gridIt1Hello">Hello! My name is</p>
             <span className="gradientName">Piotr Bednarski</span>
             <p className="gridIt1About">
@@ -23,7 +27,7 @@ function Home() {
             </div>
           </div>
           <div className="gridHomeItem2">map</div>
-          <div className="gridHomeItem3">3</div>
+          <div className="gridHomeItem3">photo carousel</div>
           <div className="gridHomeItem4">4</div>
           <div className="gridHomeItem5">5</div>
           <div className="gridHomeItem6">6</div>
