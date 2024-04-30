@@ -84,7 +84,8 @@ html {
 
 .navGradient {
   padding: 4px;
-  background: linear-gradient(45deg, #9180ff, #fdaa8c);
+  /* background: linear-gradient(45deg, #9180ff, #fdaa8c); */
+  background-image: linear-gradient(to right, #0059AC, #8FCDFF);
   border-radius: 100px;
 }
 

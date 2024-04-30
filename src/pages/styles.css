@@ -37,8 +37,9 @@ main {
   height: 3em;
   width: 3em;
   border-radius: 50%;
-  background-color: #ececec;
-  box-shadow: inset 0px 0px 0px 0.75em #b1b0b0;
+  background-color: #8fcdff;
+  /* box-shadow: inset 0px 0px 0px 0.75em #b1b0b0; */
+  box-shadow: inset 0px 0px 0px 0.75em #4ca9ffbb;
   transition: background-color 250ms, border-color 250ms,
     transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
 }
@@ -117,8 +118,9 @@ main {
 .gridHomeItem2 {
   background-image: url("src/assets/map1.png");
   background-color: #fff;
+  filter: brightness(101%);
   border-radius: 32px;
-  box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  box-shadow: inset 0px 0px 20px #ffffff, 0.2rem 0.4rem 12rem #00000014;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -160,8 +162,52 @@ main {
   border-radius: 32px;
   padding: 32px;
   box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  display: flex;
   grid-row: 3 / 4;
   grid-column: 2 / 4;
+}
+
+.gridHomeItem7 {
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+}
+
+.gridHomeItem8 {
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  grid-row: 4 / 6;
+  grid-column: 3 / 4;
+}
+
+.gridHomeItem9 {
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  grid-row: 4 / 6;
+  grid-column: 4 / 5;
+}
+.gridHomeItem10 {
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+}
+.gridHomeItem11 {
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  grid-row: 5 / 6;
+  grid-column: 2 / 3;
 }
 
 .gridIt1Img {
@@ -179,7 +225,8 @@ main {
 .gradientName {
   font-size: 52px;
   font-weight: 900;
-  background-image: linear-gradient(to right, #9180ff, #fdaa8c);
+  /* background-image: linear-gradient(to right, #9180ff, #fdaa8c); */
+  background-image: linear-gradient(to right, #0059ac, #8fcdff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -192,7 +239,8 @@ main {
 }
 
 .gridIt1Grad {
-  background-image: linear-gradient(to right, #9180ff, #fdaa8c);
+  /* background-image: linear-gradient(to right, #9180ff, #fdaa8c); */
+  background-image: linear-gradient(to right, #0059ac, #8fcdff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
@@ -272,11 +320,144 @@ main {
   opacity: 0.8;
 }
 
-.gridIt4title{
+.gridIt4title {
   font-size: 30px;
   font-weight: 700;
   color: #292929;
   margin-bottom: 24px;
+}
+
+.gridIt4learningItem {
+  border-bottom: 2px solid #bebebe;
+  padding: 18px 0;
+}
+
+.gridIt4lastItem {
+  border: none !important;
+}
+
+.gridIt4learningHeader {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.gridIt4icon {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.gI4moreIcons {
+  margin-bottom: 5px;
+}
+
+.gridIt4logo {
+  width: 27px;
+  height: 27px;
+}
+
+.gridIt4logo2 {
+  width: 25px;
+  height: 27px;
+}
+
+.gridIt4logo3 {
+  width: 27px;
+  height: 25px;
+}
+
+.gridIt4logo4 {
+  width: 27px;
+  height: 19px;
+}
+
+.gridIt4text {
+  color: #3a3a3a;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  width: 10rem;
+  transition: all 0.3s;
+}
+
+.learning-status {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #888888;
+  margin-left: 38px;
+}
+
+.gridIt6songImg {
+  width: 202px;
+  height: 202px;
+  border-radius: 12px;
+  box-shadow: 0.2rem 0.4rem 1.2rem #00000023;
+  margin-right: 3em;
+}
+
+.spotifyLogo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 4.5em;
+}
+
+.animation-container {
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.spotify-animation-1,
+.spotify-animation-2,
+.spotify-animation-3 {
+  width: 3px;
+  border-radius: 1.5px;
+  background-color: #2ad45e;
+  margin-right: 3px;
+}
+
+.gridIt6nP {
+  margin-left: 5px;
+  color: #2ad45e;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.gridIt6title {
+  font-weight: 900;
+  font-size: 24px;
+  color: #222222;
+}
+
+.gridIt6artist {
+  font-weight: 700;
+  font-size: 15px;
+  color: #3b3b3b;
+}
+
+.spotify-animation-1 {
+  animation: playing 0.8s infinite;
+}
+.spotify-animation-2 {
+  animation: playing 1s infinite;
+}
+.spotify-animation-3 {
+  animation: playing 1.2s infinite;
+}
+
+@keyframes playing {
+  0% {
+    height: 3px;
+  }
+  50% {
+    height: 12px;
+  }
+  100% {
+    height: 3px;
+  }
 }
 
 @media (max-width: 1199px) {
