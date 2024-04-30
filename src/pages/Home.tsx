@@ -279,8 +279,20 @@ function Home() {
             <div className="gridHomeItem7">future technologies</div>
             <div className="gridHomeItem8">project 1</div>
             <div className="gridHomeItem9">project 2</div>
-            <div className="gridHomeItem10">GitHub</div>
-            <div className="gridHomeItem11">LinkedIn</div>
+            <div className="gridHomeItem10">
+              <img
+                className="social-media-logo"
+                src="src\assets\github1.png"
+                alt="git1"
+              />
+            </div>
+            <div className="gridHomeItem11">
+              <img
+                className="social-media-logo"
+                src="src\assets\linkedin-app-white-icon.jpg"
+                alt="link1"
+              />
+            </div>
           </div>
         </main>
       </div>
