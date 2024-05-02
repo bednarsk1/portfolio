@@ -482,7 +482,7 @@ main {
 }
 
 .projectGridHeading {
-  font-size: 30px;
+  font-size: 29px;
   font-weight: 700;
   margin-bottom: 24px;
   line-height: 1em;
@@ -493,17 +493,7 @@ main {
 }
 
 .projectGridIcon1 {
-  width: 30px;
-  height: 30px;
-  margin-right: 3px;
-}
-.projectGridIcon2 {
-  width: 33px;
-  height: 30px;
-  margin-right: 3px;
-}
-.projectGridIcon3 {
-  width: 25px;
+  width: auto;
   height: 30px;
   margin-right: 5px;
 }
@@ -521,6 +511,34 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.projectGridButton1 {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: #dadada solid 4px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+.projectGridButton2 {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.projectGridButton1:hover,
+.projectGridButton2:hover {
+  scale: 1.07;
 }
 
 @keyframes playing {

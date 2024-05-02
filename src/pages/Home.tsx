@@ -328,22 +328,22 @@ function Home() {
             <div className="gridHomeItem8">
               <div>
                 <div className="projectGridSubHeading">PROJECT</div>
-                <div className="projectGridHeading">Project Name</div>
+                <div className="projectGridHeading">Get it with Pit</div>
                 <div className="projectGridSubHeading">Built with</div>
                 <div className="projectGridIcons">
                   <img
-                    className="projectGridIcon2"
-                    src="src\assets\react-js-icon.png"
-                    alt=""
-                  />
-                  <img
-                    className="projectGridIcon3"
+                    className="projectGridIcon1"
                     src="src\assets\html-icon.png"
                     alt=""
                   />
                   <img
-                    className="projectGridIcon3"
+                    className="projectGridIcon1"
                     src="src\assets\css-icon.png"
+                    alt=""
+                  />
+                  <img
+                    className="projectGridIcon1"
+                    src="src\assets\javascript-programming-language-icon.png"
                     alt=""
                   />
                 </div>
@@ -355,13 +355,52 @@ function Home() {
                   />
                 </div>
                 <div className="projectGridButtons">
-                  <button>View project</button>
-                  <button>About project</button>
+                  <button className="projectGridButton1">View project</button>
+                  <button className="projectGridButton2">About project</button>
                 </div>
               </div>
             </div>
-            <div className="gridHomeItem9">project 2</div>
-            <div className="gridHomeItem12">1 rep maxes</div>
+            <div className="gridHomeItem9">
+              <div>
+                <div className="projectGridSubHeading">PROJECT</div>
+                <div className="projectGridHeading">Project Name</div>
+                <div className="projectGridSubHeading">Built with</div>
+                <div className="projectGridIcons">
+                  <img
+                    className="projectGridIcon1"
+                    src="src\assets\react-js-icon.png"
+                    alt=""
+                  />
+                  <img
+                    className="projectGridIcon1"
+                    src="src\assets\html-icon.png"
+                    alt=""
+                  />
+                  <img
+                    className="projectGridIcon1"
+                    src="src\assets\node-js-icon.png"
+                    alt=""
+                  />
+                  <img
+                    className="projectGridIcon1"
+                    src="src\assets\typescript-programming-language-icon.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    className="projectGridImg"
+                    src="src\assets\white.jpg"
+                    alt=""
+                  />
+                </div>
+                <div className="projectGridButtons">
+                  <button className="projectGridButton1">View project</button>
+                  <button className="projectGridButton2">About project</button>
+                </div>
+              </div>
+            </div>
+            <div className="gridHomeItem12">all technologies i know</div>
             <div className="gridHomeItem10">
               <img
                 className="social-media-logo"
@@ -376,7 +415,15 @@ function Home() {
                 alt="link1"
               />
             </div>
-            <div className="gridHomeItem13">all technologies i know</div>
+            <div className="gridHomeItem13">
+              my gym 1 rep maxes
+              <ul>
+                <li>Bench press</li>
+                <li>Squat</li>
+                <li>Deadlift</li>
+                <li>Bent over row</li>
+              </ul>
+            </div>
           </div>
         </main>
       </div>
