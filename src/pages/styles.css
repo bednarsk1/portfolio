@@ -7,93 +7,6 @@
 main {
   display: block;
 }
-/* theme switch */
-.toggle-checkbox {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.toggle-slot {
-  font-size: 10px;
-  position: relative;
-  height: 3.5em;
-  width: 7em;
-  border: 0px solid transparent;
-  border-radius: 10em;
-  background-color: white;
-  transition: background-color 250ms;
-}
-
-.toggle-checkbox:checked ~ .toggle-slot {
-  background-color: #374151;
-}
-
-.toggle-button {
-  transform: translate(0.3em, 0.25em);
-  position: absolute;
-  height: 3em;
-  width: 3em;
-  border-radius: 50%;
-  background-color: #8fcdff;
-  /* box-shadow: inset 0px 0px 0px 0.75em #b1b0b0; */
-  box-shadow: inset 0px 0px 0px 0.75em #4ca9ffbb;
-  transition: background-color 250ms, border-color 250ms,
-    transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
-  background-color: #485367;
-  box-shadow: inset 0px 0px 0px 0.75em white;
-  transform: translate(3.65em, 0.25em);
-}
-
-.sun-icon {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  color: #ffbb52;
-}
-
-.sun-icon-wrapper {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  opacity: 1;
-  transform: translate(2em, 2em) rotate(15deg);
-  transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
-  opacity: 0;
-  transform: translate(3em, 2em) rotate(0deg);
-}
-
-.moon-icon {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  color: white;
-}
-
-.moon-icon-wrapper {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  opacity: 0;
-  transform: translate(11em, 2em) rotate(0deg);
-  transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2.5, 0.46, 0.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
-  opacity: 1;
-  transform: translate(2em, 2em) rotate(-15deg);
-}
-/* ... */
 
 .displayGrid {
   display: grid;
@@ -116,7 +29,7 @@ main {
 }
 
 .gridHomeItem2 {
-  background-image: url("src/assets/map1.png");
+  background-image: url("src/assets/map1www.png");
   background-color: #fff;
   filter: brightness(101%);
   border-radius: 32px;
@@ -200,7 +113,7 @@ main {
   align-items: center;
   justify-content: center;
   display: flex;
-  grid-row: 5 / 6;
+  grid-row: 6 / 7;
   grid-column: 1 / 2;
   transition: all 0.2s;
 }
@@ -211,9 +124,27 @@ main {
   align-items: center;
   justify-content: center;
   display: flex;
-  grid-row: 5 / 6;
+  grid-row: 6 / 7;
   grid-column: 2 / 3;
   transition: all 0.2s;
+}
+
+.gridHomeItem12 {
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  grid-row: 5 / 6;
+  grid-column: 1 / 3;
+}
+
+.gridHomeItem13 {
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  grid-row: 6 / 7;
+  grid-column: 3 / 5;
 }
 
 .gridHomeItem11:hover {
@@ -249,7 +180,7 @@ main {
   font-size: 52px;
   font-weight: 900;
   /* background-image: linear-gradient(to right, #9180ff, #fdaa8c); */
-  background-image: linear-gradient(to right, #0059ac, #8fcdff);
+  background-image: linear-gradient(to right, #0069cc, #8fcdff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -263,7 +194,7 @@ main {
 
 .gridIt1Grad {
   /* background-image: linear-gradient(to right, #9180ff, #fdaa8c); */
-  background-image: linear-gradient(to right, #0059ac, #8fcdff);
+  background-image: linear-gradient(to right, #0069cc, #8fcdff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
@@ -471,6 +402,127 @@ main {
   animation: playing 1.2s infinite;
 }
 
+.gridIt7title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #292929;
+  line-height: 0.7em;
+}
+
+.gridHomeItem7 p {
+  margin-right: 10px;
+  margin-top: 10px;
+  color: #3a3a3a;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.gridIt7imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridIt7img {
+  width: 27px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.gridIt7img2 {
+  width: 15px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.gridIt5plateCover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridIt5plate {
+  margin-top: 10px;
+  width: 250px;
+  filter: drop-shadow(1px 1px 15px #0000004b);
+  animation: spin 160s infinite;
+  animation-timing-function: linear;
+}
+
+.gridIt5txt {
+  color: #3a3a3a;
+  font-weight: 500;
+  font-size: 15px;
+  margin-right: 7px;
+}
+
+.gridIt5title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: 15px;
+  line-height: 1em;
+}
+
+.projectGridSubHeading {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #888888;
+  margin-bottom: 4px;
+}
+
+.projectGridHeading {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1em;
+}
+
+.projectGridIcons {
+  margin-bottom: 20px;
+}
+
+.projectGridIcon1 {
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
+}
+.projectGridIcon2 {
+  width: 33px;
+  height: 30px;
+  margin-right: 3px;
+}
+.projectGridIcon3 {
+  width: 25px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.projectGridImg {
+  width: 202px;
+  height: 240px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000018;
+  margin-bottom: 10px;
+}
+
+.projectGridButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes playing {
   0% {
     height: 3px;
@@ -480,6 +532,15 @@ main {
   }
   100% {
     height: 3px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 

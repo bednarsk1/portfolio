@@ -16,27 +16,27 @@ function Home() {
   const song: Song[] = [
     {
       id: 0,
-      title: "Ridin",
-      artist: "Yung Bans",
-      cover: "src/assets/Ridin-YungBans.png",
-    },
-    {
-      id: 1,
       title: "Relax, Take It Easy",
       artist: "MIKA",
       cover: "src/assets/Relax-MIKA.jpg",
     },
     {
-      id: 2,
-      title: "Because the Night",
-      artist: "Bruce Springsteen",
-      cover: "src/assets/becauseTheNight-BruceSpringsteen.jpg",
+      id: 1,
+      title: "Ridin",
+      artist: "Yung Bans",
+      cover: "src/assets/Ridin-YungBans.png",
     },
     {
-      id: 3,
+      id: 2,
       title: "A Sky Full of Stars",
       artist: "Coldplay",
       cover: "src/assets/ASkyFullOfStars-Coldplay.jpg",
+    },
+    {
+      id: 3,
+      title: "Because the Night",
+      artist: "Bruce Springsteen",
+      cover: "src/assets/becauseTheNight-BruceSpringsteen.jpg",
     },
     {
       id: 4,
@@ -253,7 +253,28 @@ function Home() {
                 <div className="learning-status">In progress.. 40%</div>
               </div>
             </div>
-            <div className="gridHomeItem5">Gym & fitness</div>
+            <div className="gridHomeItem5">
+              <div className="gridIt5title">Gym & Keeping Fit</div>
+              <div>
+                <div className="gridIt5txt">
+                  For the last <strong>two years</strong>, I have been going to
+                  the <strong>gym</strong> regularly and even work as a
+                  <strong> personal trainer</strong>. <br />
+                  <br />
+                  <p>
+                    Since childhood, I have been <strong>passionate </strong>
+                    about sports such as climbing, MMA and swimming.
+                  </p>
+                </div>
+                <div className="gridIt5plateCover">
+                  <img
+                    className="gridIt5plate"
+                    src="src\assets\blue plate.png"
+                    alt="plate"
+                  />
+                </div>
+              </div>
+            </div>
             <div className="gridHomeItem6">
               <img
                 className="gridIt6songImg"
@@ -276,9 +297,71 @@ function Home() {
                 <p className="gridIt6artist">{song[songIndex].artist}</p>
               </div>
             </div>
-            <div className="gridHomeItem7">future technologies</div>
-            <div className="gridHomeItem8">project 1</div>
+            <div className="gridHomeItem7">
+              <span className="gridIt7title">
+                Technologies for learning in the future
+              </span>
+              <div className="gridIt7imgs">
+                <p>
+                  After learning React, I want to delve into backend
+                  technologies, for example Node.js, Express, MongoDB or Python
+                </p>
+                <div className="iconContainer">
+                  <img
+                    className="gridIt7img"
+                    src="src\assets\node-js-icon.png"
+                    alt=""
+                  />
+                  <img
+                    className="gridIt7img2"
+                    src="src\assets\mongodb-icon.png"
+                    alt=""
+                  />
+                  <img
+                    className="gridIt7img"
+                    src="src\assets\python-programming-language-icon.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="gridHomeItem8">
+              <div>
+                <div className="projectGridSubHeading">PROJECT</div>
+                <div className="projectGridHeading">Project Name</div>
+                <div className="projectGridSubHeading">Built with</div>
+                <div className="projectGridIcons">
+                  <img
+                    className="projectGridIcon2"
+                    src="src\assets\react-js-icon.png"
+                    alt=""
+                  />
+                  <img
+                    className="projectGridIcon3"
+                    src="src\assets\html-icon.png"
+                    alt=""
+                  />
+                  <img
+                    className="projectGridIcon3"
+                    src="src\assets\css-icon.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    className="projectGridImg"
+                    src="src\assets\white.jpg"
+                    alt=""
+                  />
+                </div>
+                <div className="projectGridButtons">
+                  <button>View project</button>
+                  <button>About project</button>
+                </div>
+              </div>
+            </div>
             <div className="gridHomeItem9">project 2</div>
+            <div className="gridHomeItem12">1 rep maxes</div>
             <div className="gridHomeItem10">
               <img
                 className="social-media-logo"
@@ -293,6 +376,7 @@ function Home() {
                 alt="link1"
               />
             </div>
+            <div className="gridHomeItem13">all technologies i know</div>
           </div>
         </main>
       </div>

@@ -101,7 +101,7 @@ function App() {
           </a>
         </div>
       </header>
-      
+
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/About" element={<About />}></Route>
@@ -109,6 +109,12 @@ function App() {
         <Route path="/Media" element={<Media />}></Route>
         <Route path="/Gym" element={<Gym />}></Route>
       </Routes>
+
+      <footer className="Copyright">
+        <span>
+          Copyright &copy; 2024 | Piotr Bednarski
+        </span>
+      </footer>
     </>
   );
 }
