@@ -25,12 +25,25 @@ function App() {
   const gymPressed = () => {
     setNavItem(5);
   };
+
+  const [theme, setTheme] = useState("light");
+
+  function handleToggleTheme() {
+    setTheme(theme === "light" ? "dark" : "light");
+  }
+
+  console.log(theme);
+
   return (
-    <>
+    <body data-theme={theme}>
       <header className="header">
         <div className="themeSwitch">
           <label>
-            <input className="toggle-checkbox" type="checkbox" />
+            <input
+              className="toggle-checkbox"
+              onClick={handleToggleTheme}
+              type="checkbox"
+            />
             <div className="toggle-slot">
               <div className="sun-icon-wrapper">
                 <div
@@ -103,7 +116,7 @@ function App() {
       </header>
 
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Home theme={theme} />}></Route>
         <Route path="/About" element={<About />}></Route>
         <Route path="/Projects" element={<Projects />}></Route>
         <Route path="/Media" element={<Media />}></Route>
@@ -111,11 +124,9 @@ function App() {
       </Routes>
 
       <footer className="Copyright">
-        <span>
-          Copyright &copy; 2024 | Piotr Bednarski
-        </span>
+        <span>Copyright &copy; 2024 | Piotr Bednarski</span>
       </footer>
-    </>
+    </body>
   );
 }
 

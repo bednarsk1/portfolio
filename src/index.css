@@ -1,0 +1,43 @@
+:root {
+  /* nav */
+  --background-color: #f5f5f5;
+  --nav-bg: #ebebeb;
+  --nav-font: #000;
+  --nav-active: #fff;
+  --nav-hover: #4d4d4d;
+
+  /* main */
+  --gridIt-bg: #fff;
+  --helloColor: #000;
+  --headingColor: #292929;
+  --song-title: #222222;
+  --text-secondary: #3b3b3b;
+  --miniNav-bg: #ebebeb;
+  --miniNav-hv: #5f5f5f;
+  --button-border: #dadada;
+  --button-bg: #fff;
+  --button-color: #000;
+  --mapShadow: #fff;
+}
+
+[data-theme="dark"] {
+  /* nav */
+  --background-color: #1c1c1e;
+  --nav-bg: #111112;
+  --nav-font: #fff;
+  --nav-active: #2c2c2e;
+  --nav-hover: #e2e2e2;
+
+  /* main */
+  --gridIt-bg: #2c2c2e;
+  --helloColor: #fff;
+  --headingColor: #eee;
+  --song-title: #e6e6e6;
+  --text-secondary: #cfcfcf;
+  --miniNav-bg: #1a1a1c;
+  --miniNav-hv: #bebebe;
+  --button-border: #1c1c1e;
+  --button-bg: #1c1c1e;
+  --button-color: #fff;
+  --mapShadow: #2c2c2e;
+}

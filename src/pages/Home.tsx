@@ -2,9 +2,23 @@ import { useEffect, useState } from "react";
 import "./styles.css";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 
-function Home() {
+function Home({ theme }: any) {
   const [imgIndex, setImgIndex] = useState(0);
   const [songIndex, setSongIndex] = useState(0);
+  const [yearIndex, setYearIndex] = useState(4);
+
+  function pressed1() {
+    setYearIndex(1);
+  }
+  function pressed2() {
+    setYearIndex(2);
+  }
+  function pressed3() {
+    setYearIndex(3);
+  }
+  function pressed4() {
+    setYearIndex(4);
+  }
 
   interface Song {
     id: number;
@@ -50,7 +64,7 @@ function Home() {
     const interval = setInterval(() => {
       // Update songIndex to rotate through songs array
       setSongIndex((prevIndex) => (prevIndex + 1) % song.length);
-    }, 220000);
+    }, 200000);
 
     return () => clearInterval(interval);
   }, [song.length]);
@@ -95,7 +109,9 @@ function Home() {
               <span className="gradientName">Piotr Bednarski</span>
               <p className="gridIt1About">
                 I'm a self-taught front-end developer with 3 months of
-                experience. If you're looking for a
+                experience
+                <span className="basedInCracow"> based in Cracow</span>. If
+                you're looking for a
                 <span className="gridIt1Grad"> frontend developer </span>for a
                 position or need someone to build a website, let's stay in touch
                 and collaborate!
@@ -106,7 +122,10 @@ function Home() {
                 </a>
               </div>
             </div>
-            <div className="gridHomeItem2"></div> {/* where am I map */}
+            <div
+              className={`gridHomeItem2 ${theme === "light" ? "" : "dark"}`}
+            ></div>
+            {/* where am I map */}
             <div className="gridHomeItem3">
               <div className="gridIt3slider">
                 <img
@@ -123,7 +142,7 @@ function Home() {
                 />
                 <img
                   className="gridIt3photo"
-                  src="src\assets\like.png"
+                  src="src\assets\ja8.jpg"
                   alt="ph3"
                   style={{ translate: `${-100 * imgIndex}%` }}
                 />
@@ -257,8 +276,8 @@ function Home() {
               <div className="gridIt5title">Gym & Keeping Fit</div>
               <div>
                 <div className="gridIt5txt">
-                  For the last <strong>two years</strong>, I have been going to
-                  the <strong>gym</strong> regularly and even work as a
+                  For the last <strong>three years</strong>, I have been going
+                  to the <strong>gym</strong> regularly and even work as a
                   <strong> personal trainer</strong>. <br />
                   <br />
                   <p>
@@ -328,7 +347,7 @@ function Home() {
             <div className="gridHomeItem8">
               <div>
                 <div className="projectGridSubHeading">PROJECT</div>
-                <div className="projectGridHeading">Get it with Pit</div>
+                <div className="projectGridHeading">Get fit with Pit</div>
                 <div className="projectGridSubHeading">Built with</div>
                 <div className="projectGridIcons">
                   <img
@@ -350,7 +369,7 @@ function Home() {
                 <div>
                   <img
                     className="projectGridImg"
-                    src="src\assets\white.jpg"
+                    src="src\assets\GFWP1.png"
                     alt=""
                   />
                 </div>
@@ -400,30 +419,207 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="gridHomeItem12">all technologies i know</div>
+            <div className="gridHomeItem12">
+              <div className="gridItTitleBox">
+                <div className="gridIt12">My sports results over the years</div>
+                <div className="gridIt12navDiv0">
+                  <div className="gridIt12navDiv">
+                    <ul>
+                      <li
+                        className={`gridIt12liItem ${
+                          yearIndex === 1 ? "active" : ""
+                        }`}
+                        onClick={pressed1}
+                      >
+                        21
+                      </li>
+                      <li
+                        className={`gridIt12liItem ${
+                          yearIndex === 2 ? "active" : ""
+                        }`}
+                        onClick={pressed2}
+                      >
+                        22
+                      </li>
+                      <li
+                        className={`gridIt12liItem ${
+                          yearIndex === 3 ? "active" : ""
+                        }`}
+                        onClick={pressed3}
+                      >
+                        23
+                      </li>
+                      <li
+                        className={`gridIt12liItem ${
+                          yearIndex === 4 ? "active" : ""
+                        }`}
+                        onClick={pressed4}
+                      >
+                        2024
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div>
+                {yearIndex === 4 ? (
+                  <>
+                    <div className="gridItBOX1">
+                      <div className="gridItBOX2">
+                        <div className="gridItActivityTitle">bench press</div>
+                        <div className="gridItActivity">115 kg</div>
+                      </div>
+                      <div className="gridItBOX2">
+                        <div className="gridItActivityTitle">dead lift</div>
+                        <div className="gridItActivity">170 kg</div>
+                      </div>
+                      <div className="gridItBOX3">
+                        <div className="gridItActivityTitle">barbell squat</div>
+                        <div className="gridItActivity">130 kg</div>
+                      </div>
+                    </div>
+                    <div className="gridItBOX1">
+                      <div className="gridItBOX3">
+                        <div className="gridItActivityTitle">
+                          times at the gym
+                        </div>
+                        <div className="gridItActivity">44</div>
+                      </div>
+                      <div className="gridItBOX4">
+                        <div className="gridItActivityTitle">time</div>
+                        <div className="gridItActivity">61:27:33</div>
+                      </div>
+                      <div className="gridItBOXlast">
+                        <div className="gridItActivityTitle">achievement</div>
+                        <div className="gridItActivity">first clients</div>
+                      </div>
+                    </div>
+                  </>
+                ) : yearIndex === 3 ? (
+                  <>
+                    <div className="gridItBOX1">
+                      <div className="gridItBOX2">
+                        <div className="gridItActivityTitle">bench press</div>
+                        <div className="gridItActivity">113 kg</div>
+                      </div>
+                      <div className="gridItBOX2">
+                        <div className="gridItActivityTitle">dead lift</div>
+                        <div className="gridItActivity">160 kg</div>
+                      </div>
+                      <div className="gridItBOX3">
+                        <div className="gridItActivityTitle">barbell squat</div>
+                        <div className="gridItActivity">110 kg</div>
+                      </div>
+                    </div>
+                    <div className="gridItBOX1">
+                      <div className="gridItBOX3">
+                        <div className="gridItActivityTitle">
+                          times at the gym
+                        </div>
+                        <div className="gridItActivity">157</div>
+                      </div>
+                      <div className="gridItBOX5">
+                        <div className="gridItActivityTitle">time</div>
+                        <div className="gridItActivity">232:36:28</div>
+                      </div>
+                      <div className="gridItBOXlast">
+                        <div className="gridItActivityTitle">achievement</div>
+                        <div className="gridItActivity">trainer cert.</div>
+                      </div>
+                    </div>
+                  </>
+                ) : yearIndex === 2 ? (
+                  <>
+                    <div className="gridItBOX1">
+                      <div className="gridItBOX2">
+                        <div className="gridItActivityTitle">bench press</div>
+                        <div className="gridItActivity">95 kg</div>
+                      </div>
+                      <div className="gridItBOX2">
+                        <div className="gridItActivityTitle">dead lift</div>
+                        <div className="gridItActivity">120 kg</div>
+                      </div>
+                      <div className="gridItBOX3">
+                        <div className="gridItActivityTitle">barbell squat</div>
+                        <div className="gridItActivity">90 kg</div>
+                      </div>
+                    </div>
+                    <div className="gridItBOX1">
+                      <div className="gridItBOX3">
+                        <div className="gridItActivityTitle">
+                          times at the gym
+                        </div>
+                        <div className="gridItActivity">124</div>
+                      </div>
+                      <div className="gridItBOX5">
+                        <div className="gridItActivityTitle">time</div>
+                        <div className="gridItActivity">205:84:21</div>
+                      </div>
+                      <div className="gridItBOXlast">
+                        <div className="gridItActivityTitle">achievement</div>
+                        <div className="gridItActivity">---</div>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="gridItBOX1">
+                      <div className="gridItBOX2">
+                        <div className="gridItActivityTitle">bench press</div>
+                        <div className="gridItActivity">70 kg</div>
+                      </div>
+                      <div className="gridItBOX6">
+                        <div className="gridItActivityTitle">dead lift</div>
+                        <div className="gridItActivity">90 kg</div>
+                      </div>
+                      <div className="gridItBOX3">
+                        <div className="gridItActivityTitle">barbell squat</div>
+                        <div className="gridItActivity">80 kg</div>
+                      </div>
+                    </div>
+                    <div className="gridItBOX1">
+                      <div className="gridItBOX3">
+                        <div className="gridItActivityTitle">
+                          times at the gym
+                        </div>
+                        <div className="gridItActivity">48</div>
+                      </div>
+                      <div className="gridItBOX4">
+                        <div className="gridItActivityTitle">time</div>
+                        <div className="gridItActivity">61:34:58</div>
+                      </div>
+                      <div className="gridItBOXlast">
+                        <div className="gridItActivityTitle">achievement</div>
+                        <div className="gridItActivity">start of gym</div>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
             <div className="gridHomeItem10">
-              <img
-                className="social-media-logo"
-                src="src\assets\github1.png"
-                alt="git1"
-              />
+              <a target="blank" href="https://github.com/bednarsk1">
+                <div className="gridLinks">
+                  <img
+                    className="social-media-logo"
+                    src="src\assets\github1.png"
+                    alt="git1"
+                  />
+                </div>
+              </a>
             </div>
             <div className="gridHomeItem11">
-              <img
-                className="social-media-logo"
-                src="src\assets\linkedin-app-white-icon.jpg"
-                alt="link1"
-              />
+              <a target="blank" href="#">
+                <div className="gridLinks">
+                  <img
+                    className="social-media-logo"
+                    src="src\assets\linkedin-app-white-icon.jpg"
+                    alt="link1"
+                  />
+                </div>
+              </a>
             </div>
-            <div className="gridHomeItem13">
-              my gym 1 rep maxes
-              <ul>
-                <li>Bench press</li>
-                <li>Squat</li>
-                <li>Deadlift</li>
-                <li>Bent over row</li>
-              </ul>
-            </div>
+            <div className="gridHomeItem13">soon..</div>
           </div>
         </main>
       </div>

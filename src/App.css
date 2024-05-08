@@ -5,6 +5,15 @@
   font-family: "system-ui", sans-serif;
 }
 
+/* html {
+  overflow-x: hidden !important;
+} */
+
+body {
+  background-color: var(--background-color);
+  overflow-x: hidden !important;
+}
+
 html a:visited {
   color: unset !important;
 }
@@ -21,10 +30,6 @@ html a:visited {
   background-color: #a7a7a7;
 }
 
-html {
-  background-color: #f5f5f5;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -36,7 +41,6 @@ html {
   font-size: 16px;
   user-select: none;
 }
-
 
 /* theme switch */
 .toggle-checkbox {
@@ -59,7 +63,7 @@ html {
 }
 
 .toggle-checkbox:checked ~ .toggle-slot {
-  background-color: #374151;
+  background-image: linear-gradient(to right, #0069cc, #8fcdff);
 }
 
 .toggle-button {
@@ -76,7 +80,7 @@ html {
 }
 
 .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
-  background-color: #485367;
+  background-color: #7aa6ec;
   box-shadow: inset 0px 0px 0px 0.75em white;
   transform: translate(3.65em, 0.25em);
 }
@@ -126,8 +130,6 @@ html {
 }
 /* ... */
 
-
-
 .navPrimary {
   position: absolute;
   left: 50%;
@@ -135,9 +137,10 @@ html {
 }
 
 .navDiv {
-  background-color: #ebebeb;
+  background-color: var(--nav-bg);
   border-radius: 100px;
   padding: 10px 5px;
+  color: var(--nav-font);
 }
 
 .navItem {
@@ -145,24 +148,28 @@ html {
   cursor: pointer;
   border-radius: 100px;
   text-decoration: none;
-  color: #000;
   font-weight: 500;
   transition: all 0.3s;
 }
 
 .navItem.active {
-  background-color: #fff;
+  background-color: var(--nav-active);
+  cursor: default;
+}
+
+.navItem.active:hover {
+  color: var(--nav-font) !important;
 }
 
 .navItem:hover {
-  color: #4d4d4d;
+  color: var(--nav-hover) !important;
 }
 
 .navA-Contact {
   display: flex;
   cursor: pointer;
   padding: 0px 4.5px;
-  background: #fff;
+  background: var(--nav-bg);
   border-radius: 100px;
   transition: all 0.3s;
   text-decoration: none;
@@ -182,13 +189,13 @@ html {
 }
 
 .navContact {
-  color: #000;
+  color: var(--nav-font);
   font-size: 16px;
   font-weight: 600;
   padding: 6px 16px;
   border-radius: 100px;
   transition: all 0.3s;
-  background: #fff;
+  background: var(--nav-bg);
 }
 
 .Copyright {
@@ -205,13 +212,13 @@ html {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 909px) {
   .header {
     max-width: 475px;
+    margin-bottom: 100px;
   }
 
   .navPrimary {
-    position: fixed;
     top: 130px;
   }
 }
