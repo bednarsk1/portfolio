@@ -117,7 +117,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home theme={theme} />}></Route>
-        <Route path="/About" element={<About />}></Route>
+        <Route path="/About" element={<About theme={theme} />}></Route>
         <Route path="/Projects" element={<Projects />}></Route>
         <Route path="/Media" element={<Media />}></Route>
         <Route path="/Gym" element={<Gym />}></Route>

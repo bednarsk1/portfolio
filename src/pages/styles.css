@@ -19,6 +19,39 @@ main {
   margin-bottom: 80px;
 }
 
+.displayGridAbout {
+  display: grid;
+  position: relative;
+  max-width: 100%;
+  grid-template-columns: repeat(4, 266px);
+  grid-template-rows: repeat(3, 266px);
+  column-gap: 24px;
+  row-gap: 24px;
+  margin-bottom: 80px;
+}
+
+.displayGridProjects {
+  display: grid;
+  position: relative;
+  max-width: 100%;
+  grid-template-columns: repeat(4, 266px);
+  grid-template-rows: repeat(4, 266px);
+  column-gap: 24px;
+  row-gap: 24px;
+  margin-bottom: 80px;
+}
+
+.displayGridMedia {
+  display: grid;
+  position: relative;
+  max-width: 100%;
+  grid-template-columns: repeat(4, 266px);
+  grid-template-rows: repeat(3, 266px);
+  column-gap: 24px;
+  row-gap: 24px;
+  margin-bottom: 80px;
+}
+
 .gridHomeItem1 {
   background-color: var(--gridIt-bg);
   border-radius: 32px;
@@ -151,9 +184,87 @@ main {
   opacity: 0.5;
 }
 
+.gridAboutItem1 {
+  background-color: var(--gridIt-bg);
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  grid-row: 3 / 4;
+  grid-column: 1 / 5;
+  opacity: 0.5;
+}
+
+.gridMediaItem1{
+  background-color: var(--gridIt-bg);
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: 0.2rem 0.4rem 12rem #00000014;
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  opacity: 0.5;
+}
+
 .gridHomeItem11:hover {
   background-color: #698dc0;
   cursor: pointer;
+}
+
+.gridAboutIt1 {
+  text-align: center;
+}
+
+.gridAboutHello {
+  margin-top: 22px;
+}
+
+.gridAboutAbout {
+  margin: 0;
+  padding: 16px 28px !important;
+}
+
+.gridAboutContact {
+  margin-left: 12em;
+  margin-top: 8px !important;
+}
+
+.mapAbout {
+  grid-row: 2 / 3 !important;
+  grid-column: 4 / 5 !important;
+}
+
+.spotifyAbout {
+  grid-row: 1 / 2 !important;
+  grid-column: 3 / 5 !important;
+}
+
+.gridProjectsIt1 {
+  grid-row: 1 / 3 !important;
+  grid-column: 1 / 2 !important;
+}
+
+.gridProjectsIt2 {
+  grid-row: 1 / 3 !important;
+  grid-column: 2 / 3 !important;
+}
+
+.gridMediaSlider {
+  grid-row: 1 / 2 !important;
+  grid-column: 3 / 4 !important;
+}
+
+.gridMediaSpotify{
+  grid-row: 2 / 3 !important;
+  grid-column: 2 / 4 !important;
+}
+
+.gridMediaLinkedIn{
+  grid-row: 2 / 3 !important;
+  grid-column: 1 / 2 !important;
+}
+
+.gridMediaGitHub{
+  grid-row: 1 / 2 !important;
+  grid-column: 4 / 5 !important;
 }
 
 .gridHomeItem10:hover {
