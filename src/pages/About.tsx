@@ -117,7 +117,7 @@ function About({ theme }: any) {
             } mapAbout`}
           ></div>
           {/* where am I map */}
-          <div className="gridHomeItem3">
+          <div className="gridHomeItem3 gridAboutItem3">
             <div className="gridIt3slider">
               <img
                 className="gridIt3photo"
@@ -201,7 +201,7 @@ function About({ theme }: any) {
               <p className="gridIt6artist">{song[songIndex].artist}</p>
             </div>
           </div>
-          <div className="gridAboutItem1">
+          <div className="gridAboutItem1 gridAboutIns">
             soon..
             {/* technologie w ktorych pisze na codzien (nie tylko webowe) */}
           </div>

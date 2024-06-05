@@ -467,7 +467,7 @@ function Home({ theme }: any) {
                     <div className="gridItBOX1">
                       <div className="gridItBOX2">
                         <div className="gridItActivityTitle">bench press</div>
-                        <div className="gridItActivity">115 kg</div>
+                        <div className="gridItActivity">122 kg</div>
                       </div>
                       <div className="gridItBOX2">
                         <div className="gridItActivityTitle">dead lift</div>
