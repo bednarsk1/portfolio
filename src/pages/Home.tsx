@@ -282,7 +282,7 @@ function Home({ theme }: any) {
                   <br />
                   <p>
                     Since childhood, I have been <strong>passionate </strong>
-                    about sports such as climbing, MMA and swimming.
+                    about sports such as climbing, boxing and swimming.
                   </p>
                 </div>
                 <div className="gridIt5plateCover">
@@ -467,7 +467,7 @@ function Home({ theme }: any) {
                     <div className="gridItBOX1">
                       <div className="gridItBOX2">
                         <div className="gridItActivityTitle">bench press</div>
-                        <div className="gridItActivity">122 kg</div>
+                        <div className="gridItActivity">125 kg</div>
                       </div>
                       <div className="gridItBOX2">
                         <div className="gridItActivityTitle">dead lift</div>
@@ -500,7 +500,7 @@ function Home({ theme }: any) {
                     <div className="gridItBOX1">
                       <div className="gridItBOX2">
                         <div className="gridItActivityTitle">bench press</div>
-                        <div className="gridItActivity">113 kg</div>
+                        <div className="gridItActivity">115 kg</div>
                       </div>
                       <div className="gridItBOX2">
                         <div className="gridItActivityTitle">dead lift</div>
@@ -619,7 +619,13 @@ function Home({ theme }: any) {
                 </div>
               </a>
             </div>
-            <div className="gridHomeItem13">soon..</div>
+            <div className="gridHomeItem13">
+              <img
+                className="social-media-logo"
+                src="src\assets\instagram-white-icon.png"
+                alt="link1"
+              />
+            </div>
           </div>
         </main>
       </div>

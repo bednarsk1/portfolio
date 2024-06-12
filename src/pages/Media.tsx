@@ -83,50 +83,6 @@ function Media() {
     <div className="mainContainer">
       <main>
         <div className="displayGridMedia">
-          <div className="gridHomeItem10 gridMediaGitHub">
-            <a target="blank" href="https://github.com/bednarsk1">
-              <div className="gridLinks">
-                <img
-                  className="social-media-logo"
-                  src="src\assets\github1.png"
-                  alt="git1"
-                />
-              </div>
-            </a>
-          </div>
-          <div className="gridHomeItem11 gridMediaLinkedIn">
-            <a target="blank" href="#">
-              <div className="gridLinks">
-                <img
-                  className="social-media-logo"
-                  src="src\assets\linkedin-app-white-icon.jpg"
-                  alt="link1"
-                />
-              </div>
-            </a>
-          </div>
-          <div className="gridHomeItem6 gridMediaSpotify">
-            <img
-              className="gridIt6songImg"
-              src={song[songIndex].cover}
-              alt={`Cover for ${song[songIndex].title}`}
-            />
-            <div>
-              <img
-                className="spotifyLogo"
-                src="src\assets\spotify-icon.png"
-                alt="spotifyLogo"
-              />
-              <div className="animation-container">
-                <div className="spotify-animation-1"></div>
-                <div className="spotify-animation-2"></div>
-                <div className="spotify-animation-3"></div>
-                <span className="gridIt6nP">Now Playing</span>
-              </div>
-              <p className="gridIt6title">{song[songIndex].title}</p>
-              <p className="gridIt6artist">{song[songIndex].artist}</p>
-            </div>
-          </div>
           <div className="gridHomeItem3 gridMediaSlider">
             <div className="gridIt3slider">
               <img
@@ -189,7 +145,58 @@ function Media() {
               ></button>
             </div>
           </div>
-          <div className="gridMediaItem1">instagram</div>
+          <div className="gridHomeItem10 gridMediaGitHub">
+            <a target="blank" href="https://github.com/bednarsk1">
+              <div className="gridLinks">
+                <img
+                  className="social-media-logo"
+                  src="src\assets\github1.png"
+                  alt="git1"
+                />
+              </div>
+            </a>
+          </div>
+          <div className="gridHomeItem11 gridMediaLinkedIn">
+            <a target="blank" href="#">
+              <div className="gridLinks">
+                <img
+                  className="social-media-logo"
+                  src="src\assets\linkedin-app-white-icon.jpg"
+                  alt="link1"
+                />
+              </div>
+            </a>
+          </div>
+          <div className="gridHomeItem6 gridMediaSpotify">
+            <img
+              className="gridIt6songImg"
+              src={song[songIndex].cover}
+              alt={`Cover for ${song[songIndex].title}`}
+            />
+            <div>
+              <img
+                className="spotifyLogo"
+                src="src\assets\spotify-icon.png"
+                alt="spotifyLogo"
+              />
+              <div className="animation-container">
+                <div className="spotify-animation-1"></div>
+                <div className="spotify-animation-2"></div>
+                <div className="spotify-animation-3"></div>
+                <span className="gridIt6nP">Now Playing</span>
+              </div>
+              <p className="gridIt6title">{song[songIndex].title}</p>
+              <p className="gridIt6artist">{song[songIndex].artist}</p>
+            </div>
+          </div>
+
+          <div className="gridHomeItem13 gridMediaItem1">
+            <img
+              className="social-media-logo"
+              src="src\assets\instagram-white-icon.png"
+              alt="link1"
+            />
+          </div>
         </div>
       </main>
     </div>
