@@ -2,6 +2,7 @@
   max-width: 1200px;
   padding: 0 32px;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 main {
@@ -221,7 +222,6 @@ main {
   box-shadow: 0.2rem 0.4rem 12rem #00000014;
   grid-row: 3 / 4;
   grid-column: 1 / 5;
-  opacity: 0.5;
 }
 
 .gridMediaItem1 {
@@ -694,6 +694,13 @@ main {
   scale: 1.07;
 }
 
+.gridAboutIns {
+  height: 266px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .gridLinks {
   width: 266px;
   height: 266px;
@@ -794,6 +801,76 @@ main {
 }
 .gridItBOXlast {
   margin: 0 0px 20px 0;
+}
+
+
+
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.item {
+  width: 200px;
+  height: 100px;
+  background-color: #5b97cf;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: calc(50s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(50s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(50s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(50s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(50s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(50s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(50s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(50s / 8 * (8 - 8) * -1);
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
 }
 
 @keyframes playing {

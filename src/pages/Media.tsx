@@ -189,7 +189,6 @@ function Media() {
               <p className="gridIt6artist">{song[songIndex].artist}</p>
             </div>
           </div>
-
           <div className="gridHomeItem13 gridMediaItem1">
             <img
               className="social-media-logo"

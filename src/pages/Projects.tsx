@@ -35,7 +35,12 @@ function Projects() {
                 />
               </div>
               <div className="projectGridButtons">
-                <button className="projectGridButton1">View project</button>
+                <a
+                  target="blank"
+                  href="https://bednarsk1.github.io/GetFitWithPit/"
+                >
+                  <button className="projectGridButton1">View project</button>
+                </a>
                 <button className="projectGridButton2">About project</button>
               </div>
             </div>

@@ -397,7 +397,7 @@ function Home({ theme }: any) {
                   />
                   <img
                     className="projectGridIcon1"
-                    src="src\assets\node-js-icon.png"
+                    src="src\assets\node-js-icon.png" 
                     alt=""
                   />
                   <img

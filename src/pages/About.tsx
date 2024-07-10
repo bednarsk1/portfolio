@@ -202,7 +202,16 @@ function About({ theme }: any) {
             </div>
           </div>
           <div className="gridAboutItem1 gridAboutIns">
-            soon..
+            <div className="wrapper">
+              <div className="item item2"></div>
+              <div className="item item1"></div>
+              <div className="item item3"></div>
+              <div className="item item4"></div>
+              <div className="item item5"></div>
+              <div className="item item6"></div>
+              <div className="item item7"></div>
+              <div className="item item8"></div>
+            </div>
             {/* technologie w ktorych pisze na codzien (nie tylko webowe) */}
           </div>
         </div>
