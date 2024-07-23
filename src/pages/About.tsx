@@ -203,14 +203,33 @@ function About({ theme }: any) {
           </div>
           <div className="gridAboutItem1 gridAboutIns">
             <div className="wrapper">
-              <div className="item item2"></div>
-              <div className="item item1"></div>
-              <div className="item item3"></div>
-              <div className="item item4"></div>
-              <div className="item item5"></div>
-              <div className="item item6"></div>
-              <div className="item item7"></div>
-              <div className="item item8"></div>
+              <div className="item item2">
+                <img src="src\assets\css-icon.png" alt="css" />
+              </div>
+              <div className="item item1">
+                <img src="src\assets\html-icon.png" alt="html" />
+              </div>
+              <div className="item item3">
+                <img src="src\assets\react-js-icon.png" alt="react" />
+              </div>
+              <div className="item item4">
+                <img src="src\assets\c-sharp.png" alt="c#" />
+              </div>
+              <div className="item item5">
+                <img
+                  src="src\assets\typescript-programming-language-icon.png"
+                  alt="ts"
+                />
+              </div>
+              <div className="item item6">
+                <img src="src\assets\Blazor.png" alt="blazor" />
+              </div>
+              <div className="item item7">
+                <img src="src\assets\git-icon.png" alt="git" />
+              </div>
+              <div className="item item8">
+                <img src="src\assets\bootstrap-5-logo-icon.png" alt="bs5" />
+              </div>
             </div>
             {/* technologie w ktorych pisze na codzien (nie tylko webowe) */}
           </div>

@@ -1,0 +1,63 @@
+.ppTitle {
+  text-align: center;
+  padding-top: 10vh;
+  font-size: 56px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  color: var(--headingColor);
+}
+
+.ppSubTitle {
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 10vh;
+  color: var(--headingColor);
+}
+
+.ppImgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ppImg {
+  height: auto;
+  width: 1150px;
+  border-radius: 32px;
+  margin-bottom: 5.5rem;
+}
+
+.ppBuildWith {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: var(--headingColor);
+}
+
+.ppLogoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ppLogo {
+  height: 55px;
+  width: auto;
+  margin-right: 7px;
+  margin-bottom: 60px;
+}
+
+.ppDiscription {
+  color: var(--headingColor);
+  font-size: 15px;
+  line-height: 1.4;
+  max-width: 90ch;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.ppBottom{
+    margin-bottom: 60px;
+}

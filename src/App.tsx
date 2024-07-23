@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Media from "./pages/Media";
 import Gym from "./pages/Gym";
+import GetFitWithPit from "./pages/GetfitWithPit";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   const [navItem, setNavItem] = useState(1);
@@ -32,7 +34,7 @@ function App() {
     setTheme(theme === "light" ? "dark" : "light");
   }
 
-  console.log(theme);
+  // console.log(theme);
 
   return (
     <body data-theme={theme}>
@@ -74,21 +76,21 @@ function App() {
                 Home
               </Link>
               <Link
-                to={"/About"}
+                to={"/about"}
                 className={`navItem ${navItem === 2 ? "active" : ""}`}
                 onClick={aboutPressed}
               >
                 About
               </Link>
               <Link
-                to={"/Projects"}
+                to={"/projects"}
                 className={`navItem ${navItem === 3 ? "active" : ""}`}
                 onClick={projectsPressed}
               >
                 Projects
               </Link>
               <Link
-                to={"/Media"}
+                to={"/media"}
                 className={`navItem ${
                   navItem === 4 ? "active" : ""
                 } navItem-displayNone1`}
@@ -97,7 +99,7 @@ function App() {
                 Media
               </Link>
               <Link
-                to={"/Gym"}
+                to={"/gym"}
                 className={`navItem ${
                   navItem === 5 ? "active" : ""
                 } navItem-displayNone2`}
@@ -117,10 +119,15 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home theme={theme} />}></Route>
-        <Route path="/About" element={<About theme={theme} />}></Route>
-        <Route path="/Projects" element={<Projects />}></Route>
-        <Route path="/Media" element={<Media />}></Route>
-        <Route path="/Gym" element={<Gym />}></Route>
+        <Route path="/about" element={<About theme={theme} />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/media" element={<Media />}></Route>
+        <Route path="/gym" element={<Gym />}></Route>
+        <Route
+          path="/projects/getfitwithpit"
+          element={<GetFitWithPit />}
+        ></Route>
+        <Route path="/projects/portfolio" element={<Portfolio />}></Route>
       </Routes>
 
       <footer className="Copyright">

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./styles.css";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 function Home({ theme }: any) {
   const [imgIndex, setImgIndex] = useState(0);
@@ -374,15 +375,27 @@ function Home({ theme }: any) {
                   />
                 </div>
                 <div className="projectGridButtons">
-                  <button className="projectGridButton1">View project</button>
-                  <button className="projectGridButton2">About project</button>
+                  <a
+                    target="blank"
+                    href="https://bednarsk1.github.io/GetFitWithPit/"
+                  >
+                    <button className="projectGridButton1">View project</button>
+                  </a>
+                  <button className="projectGridButton2">
+                    <Link
+                      to="/projects/getfitwithpit"
+                      className="textDecorNone"
+                    >
+                      About project
+                    </Link>
+                  </button>
                 </div>
               </div>
             </div>
-            <div className="gridHomeItem9">
+            <div className="gridHomeItem9 ">
               <div>
                 <div className="projectGridSubHeading">PROJECT</div>
-                <div className="projectGridHeading">Project Name</div>
+                <div className="projectGridHeading">My Portfolio</div>
                 <div className="projectGridSubHeading">Built with</div>
                 <div className="projectGridIcons">
                   <img
@@ -392,30 +405,29 @@ function Home({ theme }: any) {
                   />
                   <img
                     className="projectGridIcon1"
-                    src="src\assets\html-icon.png"
-                    alt=""
-                  />
-                  <img
-                    className="projectGridIcon1"
-                    src="src\assets\node-js-icon.png" 
-                    alt=""
-                  />
-                  <img
-                    className="projectGridIcon1"
                     src="src\assets\typescript-programming-language-icon.png"
+                    alt=""
+                  />
+                  <img
+                    className="projectGridIcon1"
+                    src="src\assets\css-icon.png"
                     alt=""
                   />
                 </div>
                 <div>
                   <img
                     className="projectGridImg"
-                    src="src\assets\white.jpg"
+                    src="src\assets\portfolioo.png"
                     alt=""
                   />
                 </div>
                 <div className="projectGridButtons">
                   <button className="projectGridButton1">View project</button>
-                  <button className="projectGridButton2">About project</button>
+                  <button className="projectGridButton2">
+                    <Link to="/projects/portfolio" className="textDecorNone">
+                      About project
+                    </Link>
+                  </button>
                 </div>
               </div>
             </div>
