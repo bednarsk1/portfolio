@@ -109,7 +109,7 @@ function Home({ theme }: any) {
               <p className="gridIt1Hello">Hello! My name is</p>
               <span className="gradientName">Piotr Bednarski</span>
               <p className="gridIt1About">
-                I'm a self-taught front-end developer with 3 months of
+                I'm a self-taught front-end developer with 5 months of
                 experience
                 <span className="basedInCracow"> based in Cracow</span>. If
                 you're looking for a

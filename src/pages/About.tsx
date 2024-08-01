@@ -88,7 +88,7 @@ function About({ theme }: any) {
             <p className="gridIt1Hello gridAboutHello">Hello! My name is</p>
             <span className="gradientName">Piotr Bednarski</span>
             <p className="gridIt1About gridAboutAbout">
-              I'm a self-taught front-end developer with 3 months of experience
+              I'm a self-taught front-end developer with 5 months of experience
               <span className="basedInCracow"> based in Cracow</span>. If you're
               looking for a
               <span className="gridIt1Grad"> frontend developer </span>for a
@@ -96,7 +96,7 @@ function About({ theme }: any) {
               and collaborate!
             </p>
             <p className="gridIt1About gridAboutAbout">
-              I am a true lover of climbing, especially bouldering. In addition,
+              I am a true lover of box and climbing especially bouldering. In addition,
               the gym is an integral part of my life, and as a personal trainer
               I am happy that I can share my passion and help others achieve
               their fitness goals.

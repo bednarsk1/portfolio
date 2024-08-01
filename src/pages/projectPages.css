@@ -23,7 +23,7 @@
 
 .ppImg {
   height: auto;
-  width: 1150px;
+  max-width: 100%;
   border-radius: 32px;
   margin-bottom: 5.5rem;
 }
@@ -40,13 +40,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .ppLogo {
   height: 55px;
   width: auto;
   margin-right: 7px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .ppDiscription {
@@ -56,8 +57,9 @@
   max-width: 90ch;
   margin: 40px auto;
   text-align: center;
+  margin-top: 90px;
 }
 
-.ppBottom{
-    margin-bottom: 60px;
+.ppBottom {
+  margin-bottom: 60px;
 }
